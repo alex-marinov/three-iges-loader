@@ -73,7 +73,7 @@
         window.addEventListener("resize", onWindowResize, false);
 
         guiData = {
-          currentURL: "../test/models/point.iges",
+          currentURL: "../tests/models/point.iges",
         };
 
         loadIGES(guiData.currentURL);
@@ -88,8 +88,8 @@
 
         gui
           .add(guiData, "currentURL", {
-            point: "../test/models/point.iges",
-            line: "../test/models/line.iges",
+            point: "../tests/models/point.iges",
+            line: "../tests/models/line.iges",
           })
           .name("IGES File")
           .onChange(update);

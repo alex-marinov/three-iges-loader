@@ -2,9 +2,13 @@
   "name": "three-iges-loader",
   "version": "1.2.2",
   "description": "three.js IGES loader",
-  "main": "src/IGESLoader.js",
+  "main": "dist/IGESLoader.js",
+  "module": "dist/IGESLoader.mjs",
+  "types": "dist/IGESLoader.d.ts",
   "scripts": {
-    "release": "changeset publish",
+    "build": "tsup src/IGESLoader.ts --format esm,cjs --dts",
+    "lint": "tsc",
+    "release": "pnpm run build && changeset publish",
     "test": "jest",
     "test-verbose": "jest --verbose true --silent false"
   },
@@ -27,13 +31,16 @@
   },
   "homepage": "https://github.com/alex-marinov/three-iges-loader#readme",
   "dependencies": {
-    "three": "^0.158.0"
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
     "@changesets/cli": "^2.27.9",
+    "@types/three": "^0.169.0",
     "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3"
   }
 }

@@ -1,7 +1,12 @@
-# three-iges-loader
-
-[![npm](https://img.shields.io/npm/v/three-iges-loader)](https://www.npmjs.com/package/three-iges-loader)
-[![NPM](https://img.shields.io/npm/l/three-iges-loader)](https://github.com/Konsept-Design/three-iges-loader/blob/main/LICENSE)
+<p align="center">
+<h1 align="center">three-iges-loader</h1>
+</p>
+<p align="center">
+<a href="https://www.npmjs.com/package/three-iges-loader"><img src="https://img.shields.io/npm/v/three-iges-loader?label=latest" alt="npm version" /></a>
+<a href="https://github.com/Konsept-Design/three-iges-loader/blob/main/LICENSE" rel="nofollow"><img src="https://img.shields.io/npm/l/three-iges-loader" alt="license" /></a>
+<a href="https://github.com/Konsept-Design/three-iges-loader/actions?query=branch%3Amain" rel="nofollow"><img src="https://github.com/Konsept-Design/three-iges-loader/actions/workflows/main.yml/badge.svg?event=push&branch=main" alt="build status" /></a>
+<a href="https://github.com/Konsept-Design/three-iges-loader" rel="nofollow"><img src="https://img.shields.io/github/stars/Konsept-Design/three-iges-loader" alt="stars"></a>
+</p>
 
 **IGESLoader** is an IGES file loader for Three.js.
 
@@ -13,7 +18,9 @@
 
 ## Install
 
-`npm install three-iges-loader three`
+```bash
+pnpm add three-iges-loader three
+```
 
 ## Usage
 
